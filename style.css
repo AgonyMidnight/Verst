@@ -1,6 +1,8 @@
 .grid {
     display: grid;
-    grid-gap: 50px;
+    max-width: 50%;
+    grid-gap: 10px;
+    font-style: italic;
     grid-template-areas:
     "top . ."
     "SecOne SecSec ."
@@ -9,35 +11,50 @@
     "FivOne . ."
 ;
 }
-.grid:nth-child(1) {
+.grid div {
+    text-align: center;
+    height: 50px;
+    width: 70px;
+    border: 2px solid #8ca0ff;
+    border-radius: 10px 10px;
+    align-items: center;
+    background-color: rgba(211, 95, 232, 0.88);
+}
+.grid div:hover {
+    background: linear-gradient(to bottom, blanchedalmond, violet);
+}
+
+.grid div:nth-child(1) {
     grid-area: top;
 }
-.grid a:nth-child(2) {
+.grid div:nth-child(2) {
     grid-area: SecOne;
 }
-.grid a:nth-child(3) {
+.grid div:nth-child(3) {
     grid-area: SecSec;
 }
-.grid a:nth-child(4) {
+.grid div:nth-child(4) {
     grid-area: ThrOne;
 }
-.grid a:nth-child(5) {
+.grid div:nth-child(5) {
     grid-area: ThrSec;
 }
-.grid a:nth-child(6) {
+.grid div:nth-child(6) {
     grid-area: ThrThr;
 }
-.grid a:nth-child(7) {
+.grid div:nth-child(7) {
     grid-area: FouOne;
 }
-.grid a:nth-child(8) {
+.grid div:nth-child(8) {
     grid-area: FouSec;
 }
-.grid a:nth-child(9) {
+.grid div:nth-child(9) {
     grid-area: FivOne;
 }
 html, body {
-    background-color: #2f0b49;
+    background: linear-gradient(to top,
+    #e494fd, #7736f1);
+    height: 100%;
     color: white;
 }
 img {
@@ -79,6 +96,7 @@ img {
     padding-bottom: 150px;
 }
 .mainBoxTwoPage div {
+    padding: 2px;
     margin-top: 50px;
     font-size: 2vw;
     color: white;
@@ -162,7 +180,6 @@ background-color: #655da2;
 }
 .gridNinePage {
 
-    background-color: #a5c662;
     height: 100%;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(7, 1fr);
