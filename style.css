@@ -183,7 +183,7 @@ background-color: #655da2;
 
     height: 100%;
     grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(7, 1fr);
+    grid-template-rows: 60px 1fr 60px;
     display: grid;
     color: black;
     grid-auto-flow: row;
@@ -191,22 +191,19 @@ background-color: #655da2;
 .gridNinePage div:nth-child(1){
     color: white;
     grid-column: 1/-1;
-    grid-row-start: 1;
-    grid-row-end: 3;
+
     background-color: #4184c0;
 }
 .gridNinePage div:nth-child(2){
     background-color: #ffffff;
     grid-column-start: 1;
     grid-column-end: 7;
-    grid-row-start: 3;
-    grid-row-end: 6;
+
 }
 .gridNinePage div:nth-child(3){
     grid-column-start: 7 ;
     grid-column-end: 11;
-    grid-row-start: 3;
-    grid-row-end: 6;
+
     background-color: #ef866d;
 }
 .gridNinePage div:nth-child(4){
